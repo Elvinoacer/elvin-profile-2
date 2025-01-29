@@ -48,6 +48,7 @@ const Navbar = () => {
             <span className="sm:block hidden"> | Full Stack</span>
           </p>
         </Link>
+        <Link to={"https://elvin-profile.netlify.app"}>Old Profile</Link>
 
         <ul className="list-none hidden sm:flex flex-row gap-10">
           {navLinks.map((nav) => (
