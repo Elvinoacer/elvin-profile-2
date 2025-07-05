@@ -4,7 +4,7 @@ const CanvasLoader = () => {
   const { progress } = useProgress();
   return (
     <Html
-      as='div'
+      as="div"
       center
       style={{
         display: "flex",
@@ -13,16 +13,9 @@ const CanvasLoader = () => {
         flexDirection: "column",
       }}
     >
-      <span className='canvas-loader'></span>
-      <p
-        style={{
-          fontSize: 14,
-          color: "#F1F1F1",
-          fontWeight: 800,
-          marginTop: 40,
-        }}
-      >
-        {progress.toFixed(2)}%
+      <div className="w-8 h-8 border-4 border-opacity-20 border-[#915EFF] border-t-[#915EFF] rounded-full animate-spin" />
+      <p className="text-[#F1F1F1] font-bold mt-6 text-sm md:text-base">
+        {progress.toFixed(0)}%
       </p>
     </Html>
   );
